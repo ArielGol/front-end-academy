@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ariel Golubickas">
+  <meta name="description" content="Portafolio de desarrollo frontend de Ariel Golubickas">
+  <meta name="keywords" content="HTML,CSS, JavaScript">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootscrap--> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!--css-->
+  <link href="style.css" rel="stylesheet">
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <title>Mi CV Ariel Golubickas</title>
+</head>
+<body>
+  <!--Barra de navegación-->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="images/favicon.png" alt="logo de la página web" width="50">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencia">Experiencia Laboral</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Sección Hero-->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img src="images/Perfil.png" class="hero-imagen rounded-circle" alt="Foto de Ariel Golubickas">
+      <h1>Hola, mi nombre es Ariel Golubickas</h1>
+      <h2>Estudiante de desarrollo web fullstack.</h2>
+    </div>
+    <div class="hero-inferior">
+      <img src="images/htmlCssJsBoot.png" class="hero-inferior-imagen img-fluid" alt="html,css,js,bootstrap">
+    </div>
+  </section>
+<!--Sección Sobre mi-->
+  <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Sobre mí</h2>
+      <p class="seccion-texto">Ingeniero Químico, trabajando en el rubro de las energías renovables. Apasionado por la programación y diseño web. Me encanta aprender nuevas tecnologías y práctica para mejorar aún más y poder crecer tanto profesionalmente como personalmente.</p>
+    </div>
+  </section>
+  <!--Sección Experiencias-->
+  <section id="experiencia" class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <!--Desarrollo Web-->
+        <div class="columna col-12 col-md-4">
+          <img src="images/desarrollador-web.png" alt="desarrollador web">
+          <p class="experiencia-titulo">Desarrollo Web</p>
+          <p>Estudiante de desarrollo web fullstack, aprendiendo y perfeccionando tecnológias.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">HTML</span>
+            <span class="badge text-bg-primary">CSS</span>
+            <span class="badge text-bg-primary">JavaScript</span>
+            <span class="badge text-bg-primary">Git-Github</span>
+          </div> 
+        </div>
+        <!--Energías Renovables-->
+        <div class=" columna col-12 col-md-4">
+          <img src="images/energia.png" alt="energia renovables">
+          <p class="experiencia-titulo">Energías renovables</p>
+          <p>Coordinador técnico de programas de energías renovables en INTI</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Energía Solar fotovoltaica</span>
+            <span class="badge text-bg-primary">Energía eólica</span>
+            <span class="badge text-bg-primary">Biogas-Biomasa</span>
+            <span class="badge text-bg-primary">Energía hidraulica</span>
+          </div> 
+        </div>
+        <!--Ayudante de 1° Qca Gral-->
+        <div class="columna col-12 col-md-4">
+          <img src="images/quimica.png" alt="quimica general">
+          <p class="experiencia-titulo">Ayudante de Química General</p>
+          <p>Ayudante del laboratorio de Quimica General</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Laboratorio</span>
+            <span class="badge text-bg-primary">Instrumentos</span>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
